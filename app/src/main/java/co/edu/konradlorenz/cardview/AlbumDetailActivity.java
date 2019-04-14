@@ -64,10 +64,10 @@ public class AlbumDetailActivity extends AppCompatActivity {
 
 
         List<String> albumActual= albumes.get(nombreAlbum);
-
+        String nombreArtista=nombreArtista(nombreAlbum);
         for (String nombreCancion:albumActual
              ) {
-            Cancion cancion = new Cancion(nombreCancion,"Charli XCX","3:40",imagen);
+            Cancion cancion = new Cancion(nombreCancion,nombreArtista,"3:40",imagen);
             cancionList.add(cancion);
         }
 
@@ -224,6 +224,21 @@ public class AlbumDetailActivity extends AppCompatActivity {
         melodrama.add("Liability(Reprise)");
         melodrama.add("Perfect places");
         albumes.put("Melodrama",melodrama);
+        honeyMoon.add("Honeymoon");
+        honeyMoon.add("Music to watch boys to");
+        honeyMoon.add("Terrence loves you");
+        honeyMoon.add("God knows I tried");
+        honeyMoon.add("High by the beach");
+        honeyMoon.add("Freak");
+        honeyMoon.add("Art deco");
+        honeyMoon.add("Burnt Norton interlude");
+        honeyMoon.add("Religion");
+        honeyMoon.add("Salvatore");
+        honeyMoon.add("The blackest day");
+        honeyMoon.add("24");
+        honeyMoon.add("Swan song");
+        honeyMoon.add("Don't let me misunderstood");
+        albumes.put("Honeymoon",honeyMoon);
 
 
 
@@ -262,6 +277,38 @@ public class AlbumDetailActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public String nombreArtista(String nombreAlbum){
+        if(nombreAlbum.equals("True Romance")){
+            return "Charli XCX";
+        }else if(nombreAlbum.equals("Xscpae")){
+            return "Michael Jackson";
+        }else if(nombreAlbum.equals("Maroon 5")){
+            return "Maroon 5";
+        }else if(nombreAlbum.equals("Born to Die")){
+            return "Lana del rey";
+        }else if(nombreAlbum.equals("Honeymoon")){
+            return "Lana del rey";
+        }else if(nombreAlbum.equals("I Need a Doctor")){
+            return "Eminen";
+        }else if(nombreAlbum.equals("Loud")){
+            return "Rihanna";
+        }else if(nombreAlbum.equals("Legend")){
+            return "Bob Marley";
+        }else if(nombreAlbum.equals("Hello")){
+            return "Adele";
+        }else if(nombreAlbum.equals("Greatest Hits")){
+            return "Enrique Iglesias";
+        }else if(nombreAlbum.equals("Lungs")){
+            return "Florence and the Machine";
+        }else if(nombreAlbum.equals("Ceremonials")){
+            return "Florence and the Machine";
+        }else if(nombreAlbum.equals("Melodrama")){
+            return "Lorde";
+        }else{
+            return "No se encuentra";
+        }
     }
 
     }

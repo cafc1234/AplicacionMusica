@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicación de música</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_add_favourite">Agregar a favoritos</string>
+    <string name="action_play_next">Siguiente canción</string>
+    <string name="backdrop_title">Música para el momento</string>
+    <string name="backdrop_subtitle">Los mejores 20</string>
+
+
+</resources>
